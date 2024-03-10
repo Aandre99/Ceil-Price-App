@@ -1,0 +1,71 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.CursoAndroid" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <item name="colorPrimary">@color/my_black</item>
+        <item name="colorPrimaryVariant">@color/my_black</item>
+        <item name="android:statusBarColor">?attr/colorControlNormal</item>
+
+    </style>
+
+    <style name="TextTheme">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="BackgroundTheme">
+        <item name="android:background">@color/white</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="LogoTheme">
+        <item name="android:tint">@color/my_black</item>
+    </style>
+
+    <style name="ContainerTheme">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+
+    <style name="TextInputLayoutTheme" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="android:tint">@color/my_black</item>
+        <item name="android:textColor">@color/my_black</item>
+        <item name="boxStrokeColor">@color/my_black</item>
+        <item name="hintTextColor">@color/my_black</item>
+        <item name="boxStrokeWidth">2dp</item>
+    </style>
+
+
+    <style name="chooseInputLayoutTheme" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
+        <item name="android:textColor">@color/my_black</item>
+        <item name="boxStrokeColor">@color/my_black</item>
+        <item name="hintTextColor">@color/my_black</item>
+        <item name="boxStrokeWidth">2dp</item>
+    </style>
+
+    <style name="darkModeIconTheme">
+        <item name="android:tint">@color/black</item>
+        <item name="android:background">@color/white</item>
+    </style>
+
+    <style name="cardViewTheme" parent="CardView">
+        <item name="cardBackgroundColor">@color/my_white</item>
+        <item name="cardCornerRadius">20dp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:drawableTint">@color/black</item>
+    </style>
+
+    <style name="dialogTheme">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="viewTheme">
+        <item name="android:backgroundTint">@color/my_black</item>
+        <item name="android:background">@color/my_black</item>
+    </style>
+
+    <style name="viewCeilPriceTheme">
+        <item name="android:backgroundTint">@color/my_black</item>
+        <item name="android:background">@color/my_black</item>
+    </style>
+
+</resources>

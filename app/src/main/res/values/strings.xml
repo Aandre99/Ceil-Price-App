@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Curso Android</string>
+    <string name="app_title">Calculadora de Preço Teto</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="hit_dividend_mean">Média dos dividendos (Md)</string>
+    <string name="hit_restability">Rentabilidade esperada (Re)</string>
+    <string name="hit_current_price">Cotação Atual (R$)</string>
+    <string name="ceil_price_message">Preço Teto: R$ 0.00</string>
+    <string name="menu">Tipo de Ativo</string>
+    <string name="paper_fii_message">Papper FIIs Fragment</string>
+    <string name="calcButton">Calcular</string>
+    <string name="custo_de_capital_k">Taxa de Desconto (K)</string>
+    <string name="crescimento_dos_dividendos">Taxa de Crescimento (g)</string>
+    <string name="tipo_de_ativo">Tipo de Ativo</string>
+    <string name="image_desc">Grafico de acoes</string>
+    <string name="gordon_formulas">Formula de Gordon para ações e fiis</string>
+    <string name="logo_desc">Stock rise graph</string>s
+    <string name="info_params_message">O que são esses valores?</string>
+    <string name="fg_acoes">Fórmula de Gordon para Ações</string>
+    <string name="explicacao_params_gordon_acoes">P \t:Preço Teto Calculado\nMd:\tMédia dos Dividendos (5 anos)\nRe:\tRendimento Esperado, (>= 6%)</string>
+</resources>

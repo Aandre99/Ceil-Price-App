@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="input_types">
+        <item>Ações</item>
+<!--        <item>FIIs de Papel</item>-->
+        <item>FIIs de Tijolo</item>
+    </string-array>
+</resources>

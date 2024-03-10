@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".fragments.StocksFragment">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/outlinedTextField1"
+        style="@style/TextInputLayoutTheme"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/hit_dividend_mean"
+        android:textAlignment="center">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/dividendTextInputEditText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="numberDecimal"
+            android:textSize="14sp"
+            tools:layout_editor_absoluteX="49dp"
+            tools:layout_editor_absoluteY="235dp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/outlinedTextField2"
+        style="@style/TextInputLayoutTheme"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:hint="@string/hit_restability">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/rentTextInputEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:textSize="14sp"
+            tools:layout_editor_absoluteX="55dp"
+            tools:layout_editor_absoluteY="161dp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/outlinedTextField3"
+        style="@style/TextInputLayoutTheme"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:hint="@string/hit_current_price">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/current_priceTextEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:textSize="14sp"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/info_paramstextView"
+        style="@style/TextTheme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/info_params_message"
+        android:textAlignment="center"
+        app:boxStrokeWidth="3dp"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:layout_gravity="center"
+        tools:ignore="RtlCompat" />
+
+    <Button
+        android:id="@+id/calcButton"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/calcButton"
+        android:textColor="?attr/colorControlNormal"
+        android:textSize="12sp"
+        style="?attr/materialButtonOutlinedStyle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ceil_pricetextView" />
+
+</LinearLayout>

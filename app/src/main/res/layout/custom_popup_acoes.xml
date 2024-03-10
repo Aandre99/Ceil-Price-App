@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        style="@style/cardViewTheme"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:padding="5dp"
+        app:cardCornerRadius="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="0dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cLView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <View
+                    android:id="@+id/topView"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    style="@style/viewTheme"
+                    app:layout_constraintBaseline_toTopOf="@+id/cLView"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/gordon_formulasTxt"
+                    android:layout_width="match_parent"
+                    style="@style/dialogTheme"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:gravity="center"
+                    android:text="@string/fg_acoes"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <ImageView
+                android:id="@+id/eqn_imageView"
+                android:layout_width="90dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                android:contentDescription="TODO"
+                android:src="@drawable/eqn_acoes">
+            </ImageView>
+
+            <ImageView
+                android:id="@+id/paramsexplaineqn_imageView"
+                android:layout_width="310dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:contentDescription="TODO"
+                android:src="@drawable/paramsexplaineqn">
+            </ImageView>
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

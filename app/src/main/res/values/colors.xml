@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="my_gray">#818080</color>
+    <color name="my_purple">#6200EE</color>
+
+
+    <!-- White Mode Colors -->
+    <color name="black">#000000</color>
+    <color name="my_black">#272626</color>
+    <color name="dark_gray">#F3F3F3</color>
+    <color name="white">#FFFFFF</color>
+    <color name="my_white">#DFDCDC</color>
+
+    <!-- Dark Mode Colors -->
+    <color name="smooth_back">#252424</color>
+    <color name="text_purple">#B704F5</color>
+
+    <color name="my_green">#66AC71</color>
+    <color name="my_red">#D56F6F</color>
+
+</resources>

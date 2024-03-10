@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        style="@style/cardViewTheme"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:padding="10dp"
+        app:cardCornerRadius="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="0dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cLView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <View
+                    android:id="@+id/topView"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    app:layout_constraintBaseline_toTopOf="@+id/cLView"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/dialogtitleTextView"
+                    android:layout_width="match_parent"
+                    style="@style/dialogTheme"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:gravity="center"
+                    android:text="Preco Teto da Acao"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/ceilPriceTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/ceil_price_message"
+                android:textAlignment="center"
+                android:layout_marginTop="16dp"
+                android:textSize="18sp"
+                android:layout_gravity="center"
+                />
+
+            <TextView
+                android:id="@+id/resultMessageTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Acao Muita Cara, Nao Compre!"
+                android:textAlignment="center"
+                android:layout_marginTop="16dp"
+                android:padding="10dp"
+                android:textSize="18sp"
+                android:layout_gravity="center"
+                />
+
+            <View
+                android:id="@+id/bottomView"
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                app:layout_constraintBaseline_toTopOf="@+id/cLView"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>
