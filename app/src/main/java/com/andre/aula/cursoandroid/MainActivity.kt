@@ -54,20 +54,6 @@ class MainActivity : AppCompatActivity() {
                         }
                     }
                 }
-
-//                if (selectedItem == "Ações") {
-//                    supportFragmentManager.beginTransaction().apply {
-//                        replace(binding.fragmentContainerView.id, StocksFragment())
-//                        addToBackStack(null)
-//                        commit()
-//                    }
-//                } else if (selectedItem == "FIIs de Tijolo") {
-//                    supportFragmentManager.beginTransaction().apply {
-//                        replace(binding.fragmentContainerView.id, BrickFiisFragment())
-//                        addToBackStack(null)
-//                        commit()
-//                    }
-//                }
             }
 
         binding.darkModeButton.setOnClickListener{
@@ -89,7 +75,9 @@ class MainActivity : AppCompatActivity() {
         myDialog.setCancelable(true)
         myDialog.window?.setBackgroundDrawableResource(android.R.color.transparent)
 
-        val buyingOpportunity  = (ceilPrice <= currentPrice)
+        val buyingOpportunity  = (currentPrice <= ceilPrice)
+        println("ceilPrice: $ceilPrice, currentPrice: $currentPrice, buyingOpportunity: $buyingOpportunity")
+
         val color = if (buyingOpportunity) ContextCompat.getColor(
             this,
             R.color.my_green

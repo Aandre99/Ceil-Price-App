@@ -49,8 +49,6 @@ class StocksFragment : Fragment() {
 
             myDialog.findViewById<ImageView>(R.id.eqn_imageView).setImageResource(R.drawable.eqn_acoes)
             myDialog.findViewById<ImageView>(R.id.paramsexplaineqn_imageView).setImageResource(R.drawable.paramsexplaineqn)
-
-
             myDialog.show()
 
         }
