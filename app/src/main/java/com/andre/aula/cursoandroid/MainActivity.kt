@@ -18,13 +18,6 @@ class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
     private var darkModeEnable: Boolean = false
 
-    override fun onResume() {
-        super.onResume()
-        val items = resources.getStringArray(R.array.input_types)
-        val adapter = ArrayAdapter(this, R.layout.menu_item, items)
-        binding.autoCompleteTextView.setAdapter(adapter)
-    }
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
@@ -32,9 +25,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         supportActionBar?.hide()
-        binding.autoCompleteTextView.setText("Ações", false)
 
-        binding.autoCompleteTextView.onItemClickListener =
             AdapterView.OnItemClickListener { parent, _, position, _ ->
 
                 val selectedItem = parent.getItemAtPosition(position).toString()
@@ -55,6 +46,23 @@ class MainActivity : AppCompatActivity() {
                     }
                 }
             }
+
+        changeFragment(StocksFragment())
+
+        binding.bottomNavigationView.setOnItemSelectedListener {
+
+            when (it) {
+                R.id.stockItem -> {
+                   changeFragment(StocksFragment())
+                }
+                R.id.brickItem -> {
+                    changeFragment(BrickFiisFragment())
+                }
+                R.id.paperItem -> {
+                   changeFragment(StocksFragment())
+                }
+            }
+        }
 
         binding.darkModeButton.setOnClickListener{
 
@@ -93,6 +101,14 @@ class MainActivity : AppCompatActivity() {
         myDialog.findViewById<TextView>(R.id.resultMessageTextView).text = message
 
         myDialog.show()
+    }
+
+    private fun changeFragment(fragment: androidx.fragment.app.Fragment) {
+        supportFragmentManager.beginTransaction().apply {
+            replace(binding.fragmentContainerView.id, fragment)
+            addToBackStack(null)
+            commit()
+        }
     }
 
 

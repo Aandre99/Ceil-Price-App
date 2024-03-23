@@ -1,16 +1,13 @@
 package com.andre.aula.cursoandroid.fragments
 
 import android.app.Dialog
-import android.graphics.Color
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
-import android.widget.TextView
 import android.widget.Toast
-import androidx.core.content.ContextCompat
 import com.andre.aula.cursoandroid.MainActivity
 import com.andre.aula.cursoandroid.R
 import com.andre.aula.cursoandroid.databinding.FragmentStocksBinding

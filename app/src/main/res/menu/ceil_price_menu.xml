@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/stockItem"
+        android:title="@string/stocks_item_title"
+        android:icon="@drawable/stocks_icon"
+        app:cnb_iconColor="#4559CC"
+        />
+    <item
+        android:id="@+id/brickItem"
+        android:title="@string/brick_item_title"
+        android:icon="@drawable/bricks_icon"
+        app:cnb_iconColor="@color/my_green"/>
+    <item
+        android:id="@+id/paperItem"
+        android:title="@string/paper_item_title"
+        android:icon="@drawable/paper_icons"
+        app:cnb_iconColor="#E45050"/>
+</menu>

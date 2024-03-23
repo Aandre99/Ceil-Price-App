@@ -19,4 +19,7 @@
     <string name="info_params_message">O que são esses valores?</string>
     <string name="fg_acoes">Fórmula de Gordon para Ações</string>
     <string name="explicacao_params_gordon_acoes">P \t:Preço Teto Calculado\nMd:\tMédia dos Dividendos (5 anos)\nRe:\tRendimento Esperado, (>= 6%)</string>
+    <string name="brick_item_title">Fundos de Tijolo</string>
+    <string name="paper_item_title">Fundos de Papel</string>
+    <string name="stocks_item_title">Ações</string>
 </resources>
